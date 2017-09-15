@@ -1,5 +1,5 @@
 
-package foodmood;
+package foodMood;
 
 
 public class app {
