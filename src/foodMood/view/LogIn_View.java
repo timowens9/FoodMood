@@ -35,4 +35,15 @@ public class LogIn_View
         //add encryption
         return this.password_text.getText();
     }
+    
+    public void setUsername_Text(String inputText)
+    {
+        this.username_text.setText(inputText);
+    }
+    
+    public void setPassword_Text(String inputText)
+    {
+        this.password_text.setText(inputText);
+    }
+    
 }
