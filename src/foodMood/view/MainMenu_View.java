@@ -1,6 +1,4 @@
-
 package foodMood.view;
-
 
 public class MainMenu_View 
 {
@@ -8,7 +6,10 @@ public class MainMenu_View
     
     public MainMenu_View()
     {
-        
+    }
+    
+    public void initializeView() {
+        //setup GUI
     }
     
     public String getLoggedInUser()

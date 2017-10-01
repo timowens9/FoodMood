@@ -13,13 +13,16 @@ import foodMood.model.FoodList;
  */
 
 public class Food_Controller {
+    App_Controller appCtrl;
     FoodMenu_View foodView;
     FoodList foodList;
     
     /**
     * Default constructor for the Food_Controller class
+     * Constructor takes in @param appCtrl to allow two-way communication between the controllers
     */
-    public Food_Controller() {
+    public Food_Controller(App_Controller appCtrl) {
+         this.appCtrl = appCtrl;
          System.out.println("Instantiated Food Controller");
          foodView = new FoodMenu_View();
          foodList = new FoodList();

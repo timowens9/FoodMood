@@ -10,15 +10,18 @@ import foodMood.view.LogIn_View;
 public class App_Controller {
     Food_Controller foodControl;
     Mood_Controller moodControl;
-    Login_Controller newUserControl;
+    Login_Controller loginCtrl;
     LogIn_View loginView;
     Boolean isLoggedIn;
     
     /**
      * Default constructor for the App_Controller class
      */
-    public App_Controller() {
+    public App_Controller(Login_Controller loginCtrl) {
         System.out.println("Instantiated appController");
+        foodControl = new Food_Controller(this);
+        moodControl = new Mood_Controller(this);
+        this.loginCtrl = loginCtrl;
     }
     
 }

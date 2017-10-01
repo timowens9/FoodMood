@@ -10,7 +10,10 @@ public class MoodMenu_View
     
     public MoodMenu_View()
     {
-        
+    }
+    
+    public void initializeView() {
+        //setup GUI
     }
     
     public void addNewMood(Mood newMood)

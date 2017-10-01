@@ -10,7 +10,10 @@ public class FoodMenu_View
     
     public FoodMenu_View()
     {
-        
+    }
+    
+    public void initializeView() {
+        //setup GUI
     }
     
     public Food getFood()
