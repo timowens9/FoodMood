@@ -1,17 +1,11 @@
-
 package foodMood.view;
-
-import foodMood.control.App_Controller;
-
 
 public class MainMenu_View 
 {
-    App_Controller appCtrl;
     protected String loggedInUser;
     
-    public MainMenu_View(App_Controller appCtrl)
+    public MainMenu_View()
     {
-        this.appCtrl = appCtrl;
     }
     
     public void initializeView() {

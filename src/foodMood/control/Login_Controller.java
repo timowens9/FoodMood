@@ -14,7 +14,7 @@ public class Login_Controller {
     public Login_Controller() {
         System.out.println("Instantiated LoginController");
         theUsers = new UserList();
-        loginUI = new LogIn_View(this);
+        loginUI = new LogIn_View();
     }
     
     public UserList getUsers(){

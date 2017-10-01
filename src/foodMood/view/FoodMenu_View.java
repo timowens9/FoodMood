@@ -1,18 +1,15 @@
 
 package foodMood.view;
-import foodMood.control.Food_Controller;
 import foodMood.model.Food;
 import foodMood.model.Mood;
 
 public class FoodMenu_View 
 {
-    Food_Controller foodCtrl;
     protected Food food;
     protected Mood mood;
     
-    public FoodMenu_View(Food_Controller foodCtrl)
+    public FoodMenu_View()
     {
-        this.foodCtrl = foodCtrl;
     }
     
     public void initializeView() {
