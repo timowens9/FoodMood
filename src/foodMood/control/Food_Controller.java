@@ -10,7 +10,6 @@ import foodMood.model.FoodList;
 
 /**
  *
- * @author timothyowens
  */
 
 public class Food_Controller {
