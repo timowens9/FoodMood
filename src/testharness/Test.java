@@ -17,7 +17,8 @@ public class Test {
     public static void main(String[] args) {
         System.out.println("Starting tests...");
         Login_Controller theLoginCntl = new Login_Controller();
-        Food_Controller theFoodCntl = new Food_Controller();
+        App_Controller mainCntl = theLoginCntl.requestAppControl();
+        Food_Controller theFoodCntl = new Food_Controller(mainCntl);
         
         if(theLoginCntl.getUsers() == null)
             System.out.println("[TEST] FAILED: the users list is null");
@@ -34,7 +35,6 @@ public class Test {
         else
             System.out.println("[TEST] FAILED: user not authenticated properly");
         
-        App_Controller mainCntl = theLoginCntl.requestAppControl();
         
         if(mainCntl == null)
             System.out.println("[TEST] FAILED: didn't correctly instantiate appController");
