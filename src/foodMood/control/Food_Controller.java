@@ -21,7 +21,9 @@ public class Food_Controller {
     * Default constructor for the Food_Controller class
     */
     public Food_Controller() {
-        
+         System.out.println("Instantiated Food Controller");
+         foodView = new FoodMenu_View();
+         foodList = new FoodList();
     }
 }
 
