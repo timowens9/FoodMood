@@ -1,23 +1,26 @@
 package foodMood.view;
 
+import foodMood.model.User;
+
 public class MainMenu_View 
 {
-    protected String loggedInUser;
+    protected User loggedInUser;
     
-    public MainMenu_View()
+    public MainMenu_View(User inputUser)
     {
+        loggedInUser = inputUser;
     }
     
     public void initializeView() {
         //setup GUI
     }
     
-    public String getLoggedInUser()
+    public User getLoggedInUser()
     {
         return this.loggedInUser;
     }
     
-    public void setLoggedInUser(String inputUser)
+    public void setLoggedInUser(User inputUser)
     {
         this.loggedInUser = inputUser;
     }

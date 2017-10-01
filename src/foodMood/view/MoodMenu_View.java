@@ -10,6 +10,7 @@ public class MoodMenu_View
     
     public MoodMenu_View()
     {
+        moodList = new ArrayList<Mood>();
     }
     
     public void initializeView() {
