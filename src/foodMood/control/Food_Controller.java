@@ -10,7 +10,6 @@ import foodMood.model.FoodList;
 
 /**
  *
- * @author timothyowens
  */
 
 public class Food_Controller {
@@ -20,10 +19,13 @@ public class Food_Controller {
     
     /**
     * Default constructor for the Food_Controller class
-     * @param appCtrl
+     * Constructor takes in @param appCtrl to allow two-way communication between the controllers
     */
     public Food_Controller(App_Controller appCtrl) {
-        this.appCtrl = appCtrl;
+         this.appCtrl = appCtrl;
+         System.out.println("Instantiated Food Controller");
+         foodView = new FoodMenu_View();
+         foodList = new FoodList();
     }
 }
 

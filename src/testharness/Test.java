@@ -6,6 +6,7 @@
 package testharness;
 
 import foodMood.control.App_Controller;
+import foodMood.control.Food_Controller;
 import foodMood.control.Login_Controller;
 
 /**
@@ -16,6 +17,7 @@ public class Test {
     public static void main(String[] args) {
         System.out.println("Starting tests...");
         Login_Controller theLoginCntl = new Login_Controller();
+        Food_Controller theFoodCntl = new Food_Controller();
         
         if(theLoginCntl.getUsers() == null)
             System.out.println("[TEST] FAILED: the users list is null");
@@ -38,5 +40,11 @@ public class Test {
             System.out.println("[TEST] FAILED: didn't correctly instantiate appController");
         else
             System.out.println("[TEST] PASSED: successfully moved controller to main appController");
+        
+        if(theFoodCntl ==null)
+            System.out.println("[TEST] FAILED: didn't correctly instantiate Food Controller");
+         else
+            System.out.println("[TEST] PASSED: successfully moved controller to main food Controller");
+            
     }
 }
