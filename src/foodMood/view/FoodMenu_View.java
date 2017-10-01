@@ -36,9 +36,4 @@ public class FoodMenu_View
         this.mood = inputMood;
     }
     
-    public void exportFoodMood()
-    {
-        //code to tell the controller to export food/mood/timestamp to repository
-    }
-    
 }

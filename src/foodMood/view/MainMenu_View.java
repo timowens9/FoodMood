@@ -27,14 +27,5 @@ public class MainMenu_View
         this.loggedInUser = null;
         //add code to return to login screen
     }
-    
-    public void viewUserMoods()
-    {
-        //code to load the mood view
-    }
-    
-    public void enterFoodMood()
-    {
-        //code to load the foodmenu view
-    }
+
 }
