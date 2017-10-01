@@ -1,5 +1,6 @@
 
 package foodMood.view;
+import foodMood.control.Login_Controller;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 
@@ -9,11 +10,11 @@ public class LogIn_View
     protected JLabel password_label;
     protected JTextField username_text;
     protected JTextField password_text;
-    protected String username;
-    protected String password;
+    private Login_Controller loginCntl;
     
-    public LogIn_View()
+    public LogIn_View(Login_Controller parentCntl)
     {
+        this.loginCntl = parentCntl;
         initializeView();
     }
     
