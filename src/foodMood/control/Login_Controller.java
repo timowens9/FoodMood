@@ -45,7 +45,7 @@ public class Login_Controller {
     
     //normally this would be void, returns appcontroller so it can be referenced from testharness
     public App_Controller requestAppControl (){
-        App_Controller mainCntl = new App_Controller();
+        App_Controller mainCntl = new App_Controller(this);
         return mainCntl;
     }
 }

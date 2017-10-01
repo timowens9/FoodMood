@@ -14,14 +14,16 @@ import foodMood.model.FoodList;
  */
 
 public class Food_Controller {
+    App_Controller appCtrl;
     FoodMenu_View foodView;
     FoodList foodList;
     
     /**
     * Default constructor for the Food_Controller class
+     * @param appCtrl
     */
-    public Food_Controller() {
-        
+    public Food_Controller(App_Controller appCtrl) {
+        this.appCtrl = appCtrl;
     }
 }
 
