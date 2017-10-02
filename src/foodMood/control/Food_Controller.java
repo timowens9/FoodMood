@@ -27,6 +27,10 @@ public class Food_Controller {
          foodView = new FoodMenu_View();
          foodList = new FoodList();
     }
+    
+    public void requestThisControl() {
+        
+    }
 }
 
 

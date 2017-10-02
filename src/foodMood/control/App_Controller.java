@@ -24,6 +24,26 @@ public class App_Controller {
         this.loginCtrl = loginCtrl;
     }
     
+    public Food_Controller requestFoodControl(){
+        if(foodControl == null){
+            foodControl = new Food_Controller(this);
+        } else {
+            foodControl.requestThisControl();
+        }
+        
+        return foodControl;
+    }
+    
+    public Mood_Controller requestMoodControl(){
+        if(moodControl == null){
+            moodControl = new Mood_Controller(this);
+        } else {
+            moodControl.requestThisControl();
+        }
+        
+        return moodControl;
+    }
+    
 }
 
 

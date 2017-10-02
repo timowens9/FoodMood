@@ -16,4 +16,8 @@ public class Mood_Controller {
    public Mood_Controller(App_Controller appCtrl) {
        this.appCtrl = appCtrl;
    }
+   
+   public void requestThisControl() {
+       
+   }
 }
