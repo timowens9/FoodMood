@@ -7,7 +7,7 @@ package testharness;
 
 import foodMood.control.App_Controller;
 import foodMood.control.Food_Controller;
-import foodMood.control.Login_Controller;
+import foodMood.control.LoginController;
 import foodMood.control.Mood_Controller;
 
 /**
@@ -17,7 +17,7 @@ import foodMood.control.Mood_Controller;
 public class Test {
     public static void main(String[] args) {
         System.out.println("Starting tests...");
-        Login_Controller theLoginCntl = new Login_Controller();
+        LoginController theLoginCntl = new LoginController();
         
         if(theLoginCntl.getUsers() == null)
             System.out.println("[TEST] FAILED: the users list is null");

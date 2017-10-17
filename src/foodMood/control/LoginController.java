@@ -2,19 +2,19 @@
 package foodMood.control;
 
 import foodMood.model.UserList;
-import foodMood.view.LogIn_View;
+import foodMood.view.LoginView;
 
-public class Login_Controller {
+public class LoginController {
     private UserList theUsers;
-    private LogIn_View loginUI;
+    private LoginView loginUI;
     
     /**
     * Default constructor for the Mood_Controller class
     */
-    public Login_Controller() {
+    public LoginController() {
         System.out.println("Instantiated LoginController");
         theUsers = new UserList();
-        loginUI = new LogIn_View();
+        loginUI = new LoginView(this);
     }
     
     public UserList getUsers(){
@@ -39,7 +39,7 @@ public class Login_Controller {
     }
     
     //just for testing purposes
-    public LogIn_View getView(){
+    public LoginView getView(){
         return loginUI;
     }
     

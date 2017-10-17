@@ -5,19 +5,19 @@
  */
 package foodMood.control;
 
-import foodMood.view.LogIn_View;
+import foodMood.view.LoginView;
 
 public class App_Controller {
     Food_Controller foodControl;
     Mood_Controller moodControl;
-    Login_Controller loginCtrl;
-    LogIn_View loginView;
+    LoginController loginCtrl;
+    LoginView loginView;
     Boolean isLoggedIn;
     
     /**
      * Default constructor for the App_Controller class
      */
-    public App_Controller(Login_Controller loginCtrl) {
+    public App_Controller(LoginController loginCtrl) {
         System.out.println("Instantiated appController");
         foodControl = new Food_Controller(this);
         moodControl = new Mood_Controller(this);
